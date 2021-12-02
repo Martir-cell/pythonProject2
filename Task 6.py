@@ -37,3 +37,4 @@ for good in goods:
          analitics[feature_key] = [feature_value]
 print(analitics)
 
+
