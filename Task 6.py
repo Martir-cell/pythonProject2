@@ -36,3 +36,4 @@ for good in goods:
         else:
          analitics[feature_key] = [feature_value]
 print(analitics)
+

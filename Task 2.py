@@ -19,3 +19,8 @@ else:
         my_list[i + 1] = el
         i += 2
 print(my_list)
+
+
+
+
+
