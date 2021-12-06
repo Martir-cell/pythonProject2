@@ -22,3 +22,4 @@ def my_func(a):
         total.append(word)
     return total
 print(my_func("hello world"))
+

@@ -13,3 +13,4 @@ def my_func (x, y):
         return "enter only number"
 print(my_func(int(input("Enter x = ")), int(input("Enter y = "))))
 
+
