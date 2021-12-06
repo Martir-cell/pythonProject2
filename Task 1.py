@@ -1,15 +1,15 @@
-# Задача-1: Создать список и заполнить его элементами различных типов данных.
-# Реализовать скрипт проверки типа данных каждого элемента. Использовать функцию type() для проверки типа.
-# Элементы списка можно не запрашивать у пользователя, а указать явно, в программе.
+# Задание-1:
+'''Реализовать функцию, принимающую два числа (позиционные аргументы) и выполняющую их деление.
+Числа запрашивать у пользователя, предусмотреть обработку ситуации деления на ноль
+'''
 
-my_int = 5
-my_float = 1.2
-my_str = "Hello world"
-my_list = ['a', '2']
-my_tuple = ('b', '3')
-my_dict = {'city': 'Moscow', 'country': 'Russia'}
-
-super_list = [my_int, my_float, my_str, my_list, my_tuple, my_dict]
-for i in super_list:
-    print(f'{i} is {type(i)}')
+def my_func (x, y):
+    try:
+        z = x / y
+        return z
+    except ZeroDivisionError:
+        return "y is'n be a zero"
+    except ValueError:
+        return "enter only number"
+print(my_func(int(input("Enter x = ")), int(input("Enter y = "))))
 

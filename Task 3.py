@@ -1,25 +1,14 @@
-# Задача-3: Пользователь вводит месяц в виде целого числа от 1 до 12.
-# Сообщить к какому времени года относится месяц (зима, весна, лето, осень).
-# Напишите решения через list и через dict.
-number = int(input("Enter month number: "))
-if number <= 12 and number >= 1:
-    month_dict = {1: 'January',
-                  2: 'February',
-                  3: 'March',
-                  4: 'April',
-                  5: 'May',
-                  6: 'June',
-                  7: 'July',
-                  8: 'August',
-                  9: 'September',
-                  10: 'October',
-                  11: 'November',
-                  12: 'December'}
-    month_list = list(month_dict.values())
-    for i, el in enumerate(month_list):
-        if i == number-1:
-            print(f"Month from list is {month_list[i]}")
-            break
-    print(f"Month from dict is {month_dict[number]}")
-else:
-    print("Error")
+# Задание-3:
+'''Реализовать функцию my_func(), которая принимает три позиционных аргумента,
+и возвращает сумму наибольших двух аргументов.
+'''
+def my_func(x, y, z):
+    sequence = [x, y, z]
+    total = []
+    max_1 = max(sequence)
+    total.append(max_1)
+    sequence.remove(max_1)
+    max_2 = max(sequence)
+    total.append(max_2)
+    print(sum(total))
+my_func(-4, 2, 0)
